@@ -6,120 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barok Dagim</title>
     <link rel="icon" href="./assets/icons/B1.ico">
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            color: #000;
+            font-family: 'Lato', sans-serif;
+            font-size: 15px;
+            line-height: 2;
+        }
+    </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top py-0">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+            <img src="./assets/images/photo5997010467324801686.jpg" alt="profile picture" height="40px" width="40px">
+            <p class="d-inline-block my-0" style="font-size: 19px; font-weight: 300;">Barok Dagim</p>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    Home
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./entertainment.html">Entertainment Recommendations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid px-4">
+        <p class="text-center mt-2 mb-5" style="font-size: 60px; font-weight: 300;">Home</p>
 
-    <img src="./assets/images/photo5997010467324801686.jpg" alt="profile picture" width="80px" height="80px">
+        <h3 style="font-size: 25px;">Current Full-Time Engagements</h3>
+        <ul class="pl-3">
+            <li><strong>B.Sc. Student at </strong><a style="color: black; text-decoration: underline;"
+                    href="http://www.aau.edu.et/" target="_blank">Addis Ababa
+                    University</a> (Addis Ababa University - Institute of Technology)</li>
+        </ul>
+        <p style="color: #212121;">
+            I have interned at Bluemoon Ethiopia. I have taken courses on Java, C++, HTML, CSS, Javascript, Node.js,
+            Express.js and Python. I'm very
+            passionate about web design and game development. Check out my <a
+                style="color: black; text-decoration: underline;" href="https://github.com/BarokDG"
+                target="_blank">Github profile</a> to get an in-depth look on my design skills.
+        </p>
 
-    <h2>
-        <a href="./index.html">Barok.Dagim.get</a>
-    </h2>
-
-
-    <input type="search" id="search" name="searchS" title="Search">
-
-    <button>Search this site</button>
-    <hr margin-top="0">
-
-
-    <p>getachew.barok.dagim@gmail.com <br> barok.dagim.getachew@gmail.com</p>
-    <hr>
-
-    Home
-
-    <a href="./about.html">About Me</a>
-
-    <a href="./entertainment.html">Entertainment Recommendations</a>
-
-    <a href="./contact.html">Contact Me</a>
-
-    <hr width="1" size="800">
-
-    <h3>Current Full-Time Engagements</h3>
-    <ul>
-        <li><strong>B.Sc. Student at </strong><a href="http://www.aau.edu.et/" target="_blank">Addis
-                Ababa University</a> (Addis Ababa University - Institute of Technology)</li>
-    </ul>
-    <p>
-        I have interned at Bluemoon Ethiopia. I have taken courses on Java, C++, HTML, CSS, Javascript, Node.js,
-        Express.js and Python. I'm very passionate about web design and game development. Check out my <a
-            href="https://github.com/BarokDG" target="_blank">Github profile</a> to get an in-depth
-        look on my design skills.
-    </p>
-
-    <h3>Past and ongoing Work</h3>
-    <ul>
-        <li>
-            I interned at Bluemoon Ethiopia working on the gebeya.net platform back in the summer of
-            2017. It was a project that aimed to modernize the transaction between local farmers in
-            rural areas and customers in other cities all over Ethiopia.
-        </li>
-        <li>
-            I'm currently working as part of a media team, mainly overlooking video edits and
-            content creation, at Thrive. Thrive is a Young Adults ministry that focuses on helping
-            the youth grow spiritually. It's a very recent position which I hope to get a lot of
-            video editing and leadership experiences.
-        </li>
-        <li>
-            I'm currently a member of the media team at Thrive which is an event every Sunday afternoon organized to
-            create a platform for teens and youth to meet, connect, and strengthen their spiritual lives. I mostly
-            handle presentations and create content for social media posts.
-        </li>
-    </ul>
-    <h3>Volunteering</h3>
-    <p>
-        I like working in teams and helping people, so I've tried to participate in a couple of
-        volunteering programs.
-        <ul>
+        <h3 style="font-size: 25px;">Past and ongoing Work</h3>
+        <ul class="pl-3">
             <li>
-                <strong>YWCA (Young Women's and Children's Association)</strong>
-                I volunteered there after I finished 10th grade (2016). I had a lot of fun and
-                managed to help a lot of kids, in elementary school, better understand their
-                subjects. Math and English mainly. I also made a lot of friends and matured a lot
-                along the way.
+                I interned at Bluemoon Ethiopia working on the gebeya.net platform back in the summer of 2017. It was a
+                project that aimed to modernize the transaction between local farmers in rural areas and customers in
+                other
+                cities all over Ethiopia.
             </li>
             <li>
-                <strong>Red Cross</strong> I managed to volunteer here for a couple of weeks in
-                2016. I helped organize a lot of papers and also called previous blood donors to
-                remind them to come and donate blood again.
+                I'm currently working as part of a media team, mainly overlooking video edits, propresenter
+                presentations and content creation, at Thrive. Thrive is a Young Adults ministry that focuses on helping
+                the youth grow spiritually. I've had this position for little more than a year and I've learnt a lot
+                during the process.
+        </ul>
+        <h3 style="font-size: 25px;">Volunteering</h3>
+        <p>
+            I like working in teams and helping people, so I've tried to participate in a couple of volunteering
+            programs.
+            <ul class="pl-3">
+                <li>
+                    <strong>YWCA (Young Women's and Children's Association)</strong>
+                    I volunteered there after I finished 10th grade (2016). I had a lot of fun and managed to help a lot
+                    of
+                    kids in elementary school, better understand their subjects. Math and English mainly. I also made a
+                    lot
+                    of friends and matured a lot, along the way.
+                </li>
+                <li>
+                    <strong>Red Cross</strong> I managed to volunteer here for a couple of weeks in 2016. I helped
+                    organize
+                    a lot of papers and also called previous blood donors to remind them to come and donate blood again.
+                </li>
+                <li>
+                    <strong>Youth for Christ</strong> I volunteered at this organization last year (2019). It's an
+                    organization that imports books fron donors outside Ethiopia and tries to set up libraries all over
+                    the
+                    country. It also organizes fun and educating summer programs for elementary and high school kids.
+                </li>
+            </ul>
+        </p>
+        <h3 style="font-size: 25px;">Education</h3>
+
+        <ul class="pl-0">
+
+            <p>
+                <span class="font-weight-bolder">Saint Joseph School</span>, Addis Ababa, Ethiopia <br>
+                Diploma, Elementary and High School <br>
+                2005-2018 <br>
+            </p>
+
+            <p>
+                <span class="font-weight-bolder">Addis Ababa University</span>, Institute of Technology, Addis Ababa,
+                Ethiopia<br>
+                B.Sc. Information Technology <br>
+                2018- <br>
+            </p>
+
+        </ul>
+
+        <h3 style="font-size: 25px;">What does my future hold?</h3>
+        <ul class="pl-3">
+            <li>
+                I'd like to create an online shopping platform that can help my country enter the e-commerce business.
+                Plan
+                to start working on it in summer 2020.
             </li>
             <li>
-                <strong>Youth for Christ</strong> I volunteered at this organization in 2019. It's an organization that
-                imports books fron donors outside Ethiopia and tries to set up libraries all over the country. It also
-                organizes fun and educating summer programs for elementary and high school kids.
+                I'd like to do more with Gebeyanet and help the platform achieve its goals and ambitions.
+            </li>
+            <li>
+                I'd like to establish an animal shelter that can help educate people about proper care and management of
+                animals as well as provide enriching jobs for teens.
             </li>
         </ul>
-    </p>
-    <h3>Education</h3>
-
-    <ul>
-        Saint Joseph School, Addis Ababa, Ethiopia <br>
-        Diploma, Elementary and High School <br>
-        2005-2018
-
-        Addis Ababa University, Institute of Technology, Addis Ababa, Ethiopia <br>
-        B.Sc. Information Technology <br>
-        2018-
-    </ul>
-
-    <h3>What does my future hold?</h3>
-    <ul>
-        <li>
-            I'd like to create an online shopping platform that can help my country enter the
-            e-commerce business. Plan to start working on it in summer 2020.
-        </li>
-        <li>
-            I'd like to do more with Gebeyanet and help the platform achieve its goals and
-            ambitions.
-        </li>
-        <li>
-            I'd like to establish an animal shelter that can help educate people about proper care
-            and management of animals as well as provide enriching jobs for teens.
-        </li>
-    </ul>
+    </div>
 
     <p>Copyright &copy; Barok Dagim 2020</p>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+
+    <script>
+
+    </script>
 </body>
 
 </html>
