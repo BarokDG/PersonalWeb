@@ -14,63 +14,17 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            color: #000;
-            font-family: 'Lato', sans-serif;
-            font-size: 15px;
-        }
-
-        .container-main {
-            margin-left: 250px;
-            line-height: 2;
-        }
-
-        .sidebar {
-            background-color: #212121;
-            height: 100%;
-            margin: 0;
-            overflow: auto;
-            padding: 0;
-            padding-left: 40px;
-            position: fixed;
-            width: 250px;
-        }
-
-        .sidebar>a {
-            color: white;
-            display: block;
-            font-size: 16px;
-            font-weight: 300;
-            padding: 8px 0;
-            text-decoration: none;
-        }
-
-        @media screen and (max-width: 1280px) {
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
-            }
-
-            .sidebar a {
-                float: left;
-            }
-
-            .container-main {
-                margin-left: 0;
-            }
-        }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
     <div class="sidebar">
-        <div style="margin-top: 50px; margin-bottom: 65px; padding-left: 8px;">
-            <a href="index.html"><img class="mb-2" src="./assets/images/photo5997010467324801686.jpg"
+        <div id="profile">
+            <a href="index.html"><img id="profileimg" src="./assets/images/photo5997010467324801686.jpg"
                     alt="profile picture" height="37px" width="37px"></a>
-            <a href="index.html" style="text-decoration: none;">
-                <p class="mt-4" style="color: white; font-size: 25px; font-weight: 300;">Barok Dagim</p>
+            <a href="index.html">
+                <p>Barok Dagim</p>
             </a>
         </div>
         <a class="active" href="index.html">Home</a>
@@ -79,25 +33,22 @@
         <a href="contact.html">Contact Me</a>
     </div>
 
-    <div class="container-main" style="padding-left: 4.8%; padding-right: 4.8%;">
-        <p class="text-center" style="font-size: 60px; font-weight: 300; padding-top: 65px; padding-bottom: 55px;">Home
-        </p>
+    <div class="container-main">
+        <p class="text-center" id="mainTitle">Home</p>
 
-        <h3 style="font-size: 25px;">Current Full-Time Engagements</h3>
+        <h3>Current Full-Time Engagements</h3>
         <ul class="pl-3">
-            <li><strong>B.Sc. Student at </strong><a style="color: black; text-decoration: underline;"
-                    href="http://www.aau.edu.et/" target="_blank">Addis Ababa
-                    University</a> (Addis Ababa University - Institute of Technology)</li>
+            <li><strong>B.Sc. Student at </strong><a class="underlined" href="http://www.aau.edu.et/"
+                    target="_blank">Addis Ababa University</a> (Addis Ababa University - Institute of Technology)</li>
         </ul>
         <p style="color: #212121;">
             I have interned at Bluemoon Ethiopia. I have taken courses on Java, C++, HTML, CSS, Javascript, Node.js,
-            Express.js and Python. I'm very
-            passionate about web design and game development. Check out my <a
-                style="color: black; text-decoration: underline;" href="https://github.com/BarokDG"
-                target="_blank">Github profile</a> to get an in-depth look on my design skills.
+            Express.js and Python. I'm very passionate about web design and game development. Check out my <a class="underlined"
+                href="https://github.com/BarokDG" target="_blank">Github profile</a> to get an in-depth look on my
+            design skills.
         </p>
 
-        <h3 style="font-size: 25px;">Past and ongoing Work</h3>
+        <h3>Past and ongoing Work</h3>
         <ul class="pl-3">
             <li>
                 I interned at Bluemoon Ethiopia working on the gebeya.net platform back in the summer of 2017. It was a
@@ -111,7 +62,7 @@
                 the youth grow spiritually. I've had this position for little more than a year and I've learnt a lot
                 during the process.
         </ul>
-        <h3 style="font-size: 25px;">Volunteering</h3>
+        <h3>Volunteering</h3>
         <p>
             I like working in teams and helping people, so I've tried to participate in a couple of volunteering
             programs.
@@ -137,7 +88,7 @@
                 </li>
             </ul>
         </p>
-        <h3 style="font-size: 25px;">Education</h3>
+        <h3>Education</h3>
 
         <ul class="pl-0">
 
@@ -156,7 +107,7 @@
 
         </ul>
 
-        <h3 style="font-size: 25px;">What does my future hold?</h3>
+        <h3>What does my future hold?</h3>
         <ul class="pl-3">
             <li>
                 I'd like to create an online shopping platform that can help my country enter the e-commerce business.
@@ -173,7 +124,6 @@
         </ul>
     </div>
 
-    <p>Copyright &copy; Barok Dagim 2020</p>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
