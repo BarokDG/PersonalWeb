@@ -1,12 +1,11 @@
 body {
     color: #000;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif !important;
     font-size: 15px;
 }
 
 /* Sidebar */
 .sidebar {
-    background-color: #212121;
     height: 100%;
     margin: 0;
     overflow: auto;
@@ -14,6 +13,10 @@ body {
     padding-left: 40px;
     position: fixed;
     width: 250px;
+}
+
+.sidebarColor {
+    background-color: #212121;
 }
 
 .sidebar>a {
@@ -60,50 +63,59 @@ body {
     padding-bottom: 55px;
 }
 
-h3{
+h3 {
     font-size: 25px;
 }
 
-.underlined{
+.underlined {
     color: black;
     text-decoration: underline;
 }
 
-.underlined:hover{
+.underlined:hover {
     color: black;
 }
 
+#topButton {
+    display: none;
+}
+
+/* Navbar */
+nav{
+    display: none !important;
+    margin-top: 0 !important;
+}
+
+#navP{
+    color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 10px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.navbar-toggler{
+    margin-left: 0;
+}
+
+/* Custom screen responsive sidebar */
 @media screen and (max-width: 1280px) {
     .sidebar {
-        background-color: transparent;
-        height: auto;
-        padding-left: 0;
-        position: relative;
-        width: 100%;
-    }
-
-    .sidebar a {
-        float: left;
+        display: none;
     }
 
     .container-main {
         margin-left: 0;
     }
 
-    #profile {
-        margin-bottom: 0;
-        margin-top: 0;
-        padding: 0;
+    nav{
+        display: block !important;
     }
 
-    #profile p {
-        color: rgba(0, 0, 0, 0.8);
-        font-size: 20px;
-        margin: 0 5px;
-        padding: 10px;
-    }
-
-    #profileimg {
-        margin: 5px auto 0;
+    .bg-dark{
+        background-color: #212121 !important;
     }
 }

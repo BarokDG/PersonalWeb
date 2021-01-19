@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="sidebar">
+    <div class="sidebar sidebarColor">
         <div id="profile">
             <a href="index.html"><img id="profileimg" src="./assets/images/photo5997010467324801686.jpg"
                     alt="profile picture" height="37px" width="37px"></a>
@@ -27,11 +27,38 @@
                 <p>Barok Dagim</p>
             </a>
         </div>
-        <a class="active" href="index.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
         <a href="entertainment.html">Entertainment Recommendations</a>
         <a href="contact.html">Contact Me</a>
     </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="index.html"><img src="./assets/images/photo5997010467324801686.jpg"
+                alt="profile picture" height="37px" width="37px"></a>
+        <a id="navP" href="index.html">Barok Dagim</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment Recommendations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Me</a>
+                </li>
+        </div>
+    </nav>
 
     <div class="container-main">
         <p class="text-center" id="mainTitle">Home</p>
@@ -43,8 +70,9 @@
         </ul>
         <p style="color: #212121;">
             I have interned at Bluemoon Ethiopia. I have taken courses on Java, C++, HTML, CSS, Javascript, Node.js,
-            Express.js and Python. I'm very passionate about web design and game development. Check out my <a class="underlined"
-                href="https://github.com/BarokDG" target="_blank">Github profile</a> to get an in-depth look on my
+            Express.js and Python. I'm very passionate about web design and game development. Check out my <a
+                class="underlined" href="https://github.com/BarokDG" target="_blank">Github profile</a> to get an
+            in-depth look on my
             design skills.
         </p>
 
@@ -136,7 +164,18 @@
 
     <script>
         $(window).scroll(function () {
-
+            if ($(window).width() <= 1280) {
+                var scroll = $(window).scrollTop();
+                if (scroll > 60) {
+                    $('nav').removeClass('navbar-light bg-light');
+                    $('nav').addClass('navbar-dark bg-dark');
+                    $('#navP').css("color", "white");
+                } else {
+                    $('nav').removeClass('navbar-dark bg-dark');
+                    $('nav').addClass('navbar-light bg-light');
+                    $('#navP').css("color", "rgba(0, 0, 0, 0.8)");
+                }
+            } 
         })
     </script>
 </body>
