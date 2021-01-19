@@ -6,6 +6,7 @@ body {
 
 /* Sidebar */
 .sidebar {
+    background-color: #212121;
     height: 100%;
     margin: 0;
     overflow: auto;
@@ -13,10 +14,6 @@ body {
     padding-left: 40px;
     position: fixed;
     width: 250px;
-}
-
-.sidebarColor {
-    background-color: #212121;
 }
 
 .sidebar>a {
@@ -81,12 +78,12 @@ h3 {
 }
 
 /* Navbar */
-nav{
+nav {
     display: none !important;
     margin-top: 0 !important;
 }
 
-#navP{
+#navP {
     color: rgba(0, 0, 0, 0.8);
     display: inline-block;
     font-family: 'Lato', sans-serif;
@@ -97,8 +94,28 @@ nav{
     vertical-align: middle;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     margin-left: 0;
+}
+
+/* Footer */
+footer {
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#ribbon {
+    background-color: #5F94D9;
+}
+
+#footer_p {
+    color: white;
+    font-size: 18px;
+}
+
+i {
+    color: white;
 }
 
 /* Custom screen responsive sidebar */
@@ -111,11 +128,11 @@ nav{
         margin-left: 0;
     }
 
-    nav{
+    nav {
         display: block !important;
     }
 
-    .bg-dark{
+    .bg-dark {
         background-color: #212121 !important;
     }
 }
