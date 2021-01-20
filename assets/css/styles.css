@@ -1,7 +1,11 @@
 body {
     color: #000;
+    display: flex !important;
+    flex-direction: column !important;
     font-family: 'Lato', sans-serif !important;
     font-size: 15px;
+    min-height: 100vh !important;
+    min-width: 350px;
 }
 
 /* Sidebar */
@@ -100,6 +104,7 @@ nav {
 
 /* Footer */
 footer {
+    margin-top: auto !important;
     overflow-x: hidden;
     position: relative;
     z-index: 1;
@@ -119,7 +124,7 @@ i {
 }
 
 /* Custom screen responsive sidebar */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
     .sidebar {
         display: none;
     }
@@ -134,5 +139,11 @@ i {
 
     .bg-dark {
         background-color: #212121 !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #mainTitle{
+        font-size: 40px;
     }
 }
