@@ -15,7 +15,7 @@ nav {
 
 /* Main Content */
 /* Cards */
-.card:hover{
+.jump:hover{
     bottom: 10px;
     cursor: pointer;
 }
