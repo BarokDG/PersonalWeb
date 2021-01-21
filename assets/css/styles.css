@@ -123,6 +123,26 @@ i {
     color: white;
 }
 
+
+/* Contact Me Page */
+#mainTitle2 {
+    color: #403866;
+    font-size: 40px;
+    padding-top: 65px;
+    padding-bottom: 20px;
+}
+
+input, textarea, select{
+    border: 2px;
+    outline: none;
+}
+
+textarea{
+    border-radius: 5%;
+}
+
+
+
 /* Custom screen responsive sidebar */
 @media screen and (max-width: 1200px) {
     .sidebar {
@@ -143,7 +163,7 @@ i {
 }
 
 @media screen and (max-width: 500px) {
-    #mainTitle{
+    #mainTitle {
         font-size: 40px;
     }
 }

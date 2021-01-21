@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
-<body>
+<body style="background-color: #F2F2F2;">
 
     <!-- Side Bar -->
 
@@ -43,7 +43,7 @@
 
     <!-- Navigation Bar -->
 
-    <nav class="navbar navbar-expand-xl navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light sticky-top pl-0">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -75,39 +75,29 @@
 
     <!-- Main Content -->
 
-    <div class="container-main mb-5">
-        <p class="text-center" id="mainTitle">Contact Me</p>
-        Fill in the message box below with anything you want to talk to me about, regarding my work or
-        recommendations,
-        and I'll get back to you as soon as I see it.
-        </p>
+    <div class="container-main mb-5 text-center">
+        <p id="mainTitle2" class="font-weight-bolder">Send me a Message</p>
+
         <form>
-            <label for="fName">First Name</label>
-            <input class="ml-2" type="text" id="fName" pattern="[A-Za-z]{1,15}" name="fName"
-                title="This field can't contain digits." required> <br>
+            <input class="d-block rounded-pill border-dark mx-auto w-50 my-3 px-5 py-3" type="text" id="fName"
+                pattern="^[a-zA-Z]{2,}(?: [a-zA-Z]+){0,2}$" name="fName" placeholder="Full Name" required>
 
-            <label for="sName">Last Name</label>
-            <input class="ml-2" type="text" id="sName" pattern="[A-Za-z]{1,15}" name="sName"
-                title="This field can't contain digits" required> <br>
+            <input class="d-block rounded-pill border-dark mx-auto w-50 my-3 px-5 py-3" type="email" id="Email"
+                name="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" placeholder="Email"
+                title="the address you entered is missing a domain name">
 
-            <label for="Email">Email</label>
-            <input class="ml-2" type="email" id="Email" name="email">
-            *Optional <br>
+            <input class="d-block rounded-pill border-dark mx-auto w-50 my-3 px-5 py-3" type="tel" id="tel"
+                pattern='^\+\d{0,13}' title="Make sure to include the country code" name="tel" placeholder="Phone">
 
-            <label for="tel">Phone Number</label>
-            <input class="ml-2" type="tel" id="tel" pattern='^\+\d{0,13}'
-                title="Enter your country code including the plus sign and fill in the rest!" name="tel">
-            *Optional <br>
+            <div class="input-group text-center w-50" style="margin-left: 25%">
+                <div class="input-group-prepend border-dark py-3 w-25">
+                    <span class="input-group-text w-100" id="birthday">Birthday</span>
+                </div>
+                <input class="d-block border-dark w-75 my-3 py-3" type="date" id="date" name="date"
+                    placeholder="Birthday" required>
+            </div>
 
-            <label for="Date">Date</label>
-            <input class="ml-2" type="date" id="Date" name="date" required>
-
-            <br>
-            <label for="Text">Message</label><br>
-            <textarea name="" id="Text" cols="30" rows="10" required></textarea>
-            <br>
-            Country:
-            <select name="country" id="country">
+            <select class="d-block rounded-pill border-dark mx-auto w-50 my-3 px-5 py-3" name="country" id="country">
                 <option value="" selected>--Choose Country--</option>
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -357,10 +347,13 @@
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
 
-            <section class="mt-4 mb-3">
+            <textarea class="d-block border-dark mx-auto w-50 my-3 px-5 py-3" name="" id="Text" cols="30" rows="10"
+                placeholder="Message" required></textarea>
+
+            <div class="mt-4 mb-3">
                 <input class="btn btn-secondary" type="reset" value="Reset">
                 <input class="btn btn-success" type="submit" value="Submit">
-            </section>
+            </div>
         </form>
     </div>
 
@@ -381,7 +374,7 @@
                 if (scroll > 60) {
                     $('nav').removeClass('navbar-light bg-light');
                     $('nav').addClass('navbar-dark bg-dark');
-                    $('#navP').css("color", "white");
+                    $('#navP').css("color", "dark");
                 } else {
                     $('nav').removeClass('navbar-dark bg-dark');
                     $('nav').addClass('navbar-light bg-light');
@@ -389,6 +382,12 @@
                 }
             }
         })
+
+        // var input = document.getElementById('Email');
+
+        // input.oninvalid = function(event){
+        //     event.target.setCustomValidity("The Email address you entered is missing a domain name.");
+        // }
     </script>
 </body>
 
