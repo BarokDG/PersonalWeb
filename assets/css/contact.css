@@ -11,9 +11,10 @@
     padding-bottom: 20px;
 }
 
-input, textarea, select{
+input, textarea, select, .input-group{
     border: 2px;
     outline: none;
+    width: 50%;
 }
 
 textarea{
@@ -30,4 +31,35 @@ textarea{
 
 .input-group{
     margin-left: 25% !important;
+}
+
+@media screen and (max-width: 1000px){
+    input, textarea, select, .input-group{
+        width: 75%;
+    }
+
+    .input-group{
+        margin-left: 12.5% !important;
+    }
+}
+
+@media screen and (max-width: 700px){
+    input, textarea, select, .input-group{
+        width: 100%;
+    }
+
+    .input-group{
+        margin-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .rounded-pill, .input-group-text{
+        padding-left: 1rem !important;
+        width: 100%;
+    }
+
+    .input-group{
+        margin-left: 0 !important;
+    }
 }
