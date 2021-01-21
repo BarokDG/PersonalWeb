@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
-<body style="background-color: #F2F2F2;">
+<body id="contactBody">
 
     <!-- Side Bar -->
 
@@ -86,19 +86,19 @@
                 name="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" placeholder="Email"
                 title="the address you entered is missing a domain name">
 
-            <input class="d-block rounded-pill border-dark mx-auto w-50 my-3 px-5 py-3" type="tel" id="tel"
+            <input class="d-block rounded-pill border-dark mx-auto w-50 mt-3 px-5 py-3" type="tel" id="tel"
                 pattern='^\+\d{0,13}' title="Make sure to include the country code" name="tel" placeholder="Phone">
 
-            <div class="input-group text-center w-50" style="margin-left: 25%">
+            <div class="input-group text-center w-50">
                 <div class="input-group-prepend border-dark py-3 w-25">
-                    <span class="input-group-text w-100" id="birthday">Birthday</span>
+                    <span class="input-group-text w-100 px-5" id="birthday">Birthday</span>
                 </div>
-                <input class="d-block border-dark w-75 my-3 py-3" type="date" id="date" name="date"
+                <input class="d-block border-dark w-75 my-3 py-3 px-3" type="date" id="date" name="date"
                     placeholder="Birthday" required>
             </div>
 
-            <select class="d-block rounded-pill border-dark mx-auto w-50 my-3 px-5 py-3" name="country" id="country">
-                <option value="" selected>--Choose Country--</option>
+            <select class="d-block rounded-pill border-dark mx-auto w-50 mb-3 px-5 py-4" name="country" id="country">
+                <option value="" selected>Choose Country--</option>
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
                 <option value="Algeria">Algeria</option>
@@ -374,7 +374,7 @@
                 if (scroll > 60) {
                     $('nav').removeClass('navbar-light bg-light');
                     $('nav').addClass('navbar-dark bg-dark');
-                    $('#navP').css("color", "dark");
+                    $('#navP').css("color", "white");
                 } else {
                     $('nav').removeClass('navbar-dark bg-dark');
                     $('nav').addClass('navbar-light bg-light');
@@ -382,13 +382,8 @@
                 }
             }
         })
-
-        // var input = document.getElementById('Email');
-
-        // input.oninvalid = function(event){
-        //     event.target.setCustomValidity("The Email address you entered is missing a domain name.");
-        // }
     </script>
+    
 </body>
 
 <!-- Footer -->
@@ -420,7 +415,7 @@
         </div>
     </div>
 
-    <div class="text-center text-dark p-3" style="background-color: #B2BFA8">
+    <div class="text-center text-dark p-3" id="footercopy">
         © 2020 Copyright Barok Dagim
     </div>
 </footer>
