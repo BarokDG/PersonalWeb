@@ -20,6 +20,10 @@ nav {
     cursor: pointer;
 }
 
+#cursor{
+    cursor: pointer;
+}
+
 /* Back to top button */
 #myBtn {
     border: none;
@@ -48,4 +52,27 @@ footer {
     background-color: #B2BFA8;
 }
 
-@media screen and (max-width: 1400px) {}
+/* Tribute Page */
+
+article {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.triP {
+    margin-bottom: 1.3em;
+}
+
+.indented{
+    text-indent: 50px;
+}
+
+
+@media screen and (max-width: 500px){
+    article{
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
